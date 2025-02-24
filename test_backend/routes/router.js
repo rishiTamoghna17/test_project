@@ -18,7 +18,6 @@ router.post("/login", userLoginValidator(), validate, UserController.loginUser)
 router.post("/refresh-token",UserController.refreshAccessToken);
 
 //add members
-router.post("/add-members", UserController.addMembers)
-router.get("/get-members", UserController.getMembers)
+// router.post("/add-members", UserController.addMembers)
 
 module.exports = router; 
